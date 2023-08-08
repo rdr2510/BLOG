@@ -4,19 +4,15 @@
 - nom (string), nom de la catégorie
 - id (string), identifiant unique du categorie
 
-**/API/articles/add**{red}
-Permet d'ajouter un nouveau article.
+**/API/articles/add** - >Permet d'ajouter un nouveau article.
 
 Voici les parametre qui va avec l'article:
-
 - titre (string), titre du de l'article
 - contenu (string), Contenu de l'article
 - image (string), URL de l'image de l'article
 - categorie_id (int), Identifiant unique du categorie
 
-***/API/categories/read***
-
->Cela permet de lister une categorie avec les parametre dans l'API'.
+***/API/categories/read*** - >Cela permet de lister une categorie avec les parametre dans l'API'.
 
 Choisir la methode GET dans l'outil Postman  puis entrer l'endpoint associé.
 
