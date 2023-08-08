@@ -1,13 +1,10 @@
-#BLOG
-**API RESTful**
+# BLOG - **API RESTful**
 
             *LES ENDPOINT DISPONIBLES*
 
-**/API/articles/add**
-Permet d'ajouter un nouveau article.
+**/API/articles/add**{red}, *Permet d'ajouter un nouveau article.*
 
 Voici les parametre qui va avec l'article:
-
 - titre (string), titre du de l'article
 - contenu (string), Contenu de l'article
 - image (string), URL de l'image de l'article
