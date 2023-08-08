@@ -5,10 +5,10 @@
 >Permet d'ajouter un nouveau article.
 
 - Les paramètres:
-1. titre (string), titre du de l'article.
-2. contenu (string), Contenu de l'article.
-3. image (string), URL de l'image de l'article.
-4. categorie_id (int), Identifiant unique du categorie.
+      1. titre (string), titre du de l'article.
+      2. contenu (string), Contenu de l'article.
+      3. image (string), URL de l'image de l'article.
+      4. categorie_id (int), Identifiant unique du categorie.
 
 - Methode: POST
 
