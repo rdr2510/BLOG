@@ -1,23 +1,6 @@
-# BLOG API RESTful 
+# API RESTful
+## LES ENDPOINTS DISPONIBLES:
 
-*URL: https://apirestblog.000webhostapp.com/*
-
-## ARTICLES
-***/API/articles/reads***
->Permet de recuperer et de lister toute les articles.
-- Les paramètres:
-  >non disponible
-- Methode: **GET**
-
-##
-***/API/articles/read/{id}***
->Permet de lister un article à partir de son identifiant unique ID .
-- Les paramètres:
-  - **id (int)**, *identifiant unique de l'article.*
-    
-- Methode: **GET**
-  
-##
 ***/API/articles/add***
 >Permet d'ajouter un nouveau article.
 - Les paramètres:
