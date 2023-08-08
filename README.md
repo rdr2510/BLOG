@@ -66,7 +66,7 @@
 - Methode: **PUT**
 
 ##
-***/API/articles/delete***
+***/API/categories/delete***
 >Permet de suprimer une catégorie à partir de son identifiant unique.
 - Les paramètres:
   - **id (int)**, *Identifiant unique du catégorie.*
