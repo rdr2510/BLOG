@@ -1,5 +1,6 @@
 # API RESTful
-## LES ENDPOINTS DISPONIBLES:
+
+*URL: https://apirestblog.000webhostapp.com/*
 
 ***/API/articles/add***
 >Permet d'ajouter un nouveau article.
