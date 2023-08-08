@@ -50,7 +50,8 @@ _Voici les parametres du catégorie:_
 - nom (string), nom de la catégorie
 - id (string), identifiant unique du categorie
 
-**_/API/categories/reads_**
+**/API/articles/add**
+Permet d'ajouter un nouveau article.
 
 > Cette fonction permet de lister toute les categories dans l'API
 
