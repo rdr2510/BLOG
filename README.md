@@ -1,28 +1,32 @@
 # API RESTful
 ## LES ENDPOINTS DISPONIBLES:
 
+***/API/articles/reads***
+>Permet de recuperer et de lister toute les articles.
+- Les paramètres:
+  >non disponible
+- Methode: **GET**
+
+##
+***/API/articles/read/{id}***
+>Permet de lister un article à partir de son identifiant unique ID .
+- Les paramètres:
+  - **id (int)**, *identifiant unique de l'article.*
+- Methode: **GET**
+  
+##
 ***/API/articles/add***
 >Permet d'ajouter un nouveau article.
 
 - Les paramètres:
-      1. titre (string), titre du de l'article.
-      2. contenu (string), Contenu de l'article.
-      3. image (string), URL de l'image de l'article.
-      4. categorie_id (int), Identifiant unique du categorie.
+  - **titre (string)**, *titre du de l'article.*
+  - **contenu (string)**, *Contenu de l'article.*
+  - **image (string)**, *URL de l'image de l'article.*
+  - **categorie_id (int)**, *Identifiant unique du categorie.*
 
 - Methode: POST
 
-***/API/articles/reads***
-
->Cette fonction permet de recuperer et de lister toute les articles avec leur parametre.
-
-Il s'suffit de choisir la methode GET dans l'outil Postman et d'entrer l'endpoint correspond a l'action.
-
-***/API/articles/read***
-
->Cela permet de lister un article avec les parametre .
-
-Choisir la methode GET dans l'outil Postman  puis entrer l'endpoint associé.
+##
 
 ***/API/articles/update***
 
