@@ -4,13 +4,13 @@
 ***/API/articles/add***
 >Permet d'ajouter un nouveau article.
 
-*Les paramètres*:
+- Les paramètres:
 1. titre (string), titre du de l'article.
 2. contenu (string), Contenu de l'article.
 3. image (string), URL de l'image de l'article.
 4. categorie_id (int), Identifiant unique du categorie.
 
-Vous devez choisir la methode POST dans l'outil Postman pour ajouter un nouvel article puis entrer l'endpoint associé.
+- Methode: POST
 
 ***/API/articles/reads***
 
