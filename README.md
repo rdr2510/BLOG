@@ -12,6 +12,7 @@
 >Permet de lister un article à partir de son identifiant unique ID .
 - Les paramètres:
   - **id (int)**, *identifiant unique de l'article.*
+    
 - Methode: **GET**
   
 ##
