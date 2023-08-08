@@ -1,21 +1,7 @@
-# BLOG API RESTful
+# API RESTful
 
-## ARTICLES
-***/API/articles/reads***
->Permet de recuperer et de lister toute les articles.
-- Les paramètres:
-  >non disponible
-- Methode: **GET**
+*URL: https://apirestblog.000webhostapp.com/*
 
-##
-***/API/articles/read/{id}***
->Permet de lister un article à partir de son identifiant unique ID .
-- Les paramètres:
-  - **id (int)**, *identifiant unique de l'article.*
-    
-- Methode: **GET**
-  
-##
 ***/API/articles/add***
 >Permet d'ajouter un nouveau article.
 - Les paramètres:
@@ -80,7 +66,7 @@
 - Methode: **PUT**
 
 ##
-***/API/articles/delete***
+***/API/categories/delete***
 >Permet de suprimer une catégorie à partir de son identifiant unique.
 - Les paramètres:
   - **id (int)**, *Identifiant unique du catégorie.*
