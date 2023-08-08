@@ -1,28 +1,16 @@
 # API RESTful
 ## LES ENDPOINTS DISPONIBLES:
 
-***/API/articles/reads***
->Permet de recuperer et de lister toute les articles.
-- Les paramètres:
-  >non disponible
-- Methode: **GET**
+##_/API/articles/add - > Permet d'ajouter un nouveau article.
 
-##
-***/API/articles/read/{id}***
->Permet de lister un article à partir de son identifiant unique ID .
-- Les paramètres:
-  - **id (int)**, *identifiant unique de l'article.*
-- Methode: **GET**
-  
-##
-***/API/articles/add***
->Permet d'ajouter un nouveau article.
+_Un articles doit contenir les paramètres suivant_:
 
-- Les paramètres:
-  - **titre (string)**, *titre du de l'article.*
-  - **contenu (string)**, *Contenu de l'article.*
-  - **image (string)**, *URL de l'image de l'article.*
-  - **categorie_id (int)**, *Identifiant unique du categorie.*
+- titre (string), titre du de l'article.
+- contenu (string), Contenu de l'article.
+- image (string), URL de l'image de l'article.
+- categorie_id (int), Identifiant unique du categorie.
+
+Vous devez choisir la methode POST dans l'outil Postman pour ajouter un nouvel article puis entrer l'endpoint associé.
 
 - Methode: POST
 
