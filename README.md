@@ -4,7 +4,7 @@
 - nom (string), nom de la catégorie
 - id (string), identifiant unique du categorie
 
-**/API/articles/add**
+**/API/articles/add**{red}
 Permet d'ajouter un nouveau article.
 
 Voici les parametre qui va avec l'article:
