@@ -2,9 +2,7 @@
 
 ## LES ENDPOINTS DISPONIBLES:
 
-**_/API/articles/add_**
-
-> Permet d'ajouter un nouveau article.
+##_/API/articles/add - > Permet d'ajouter un nouveau article.
 
 _Un articles doit contenir les paramètres suivant_:
 
