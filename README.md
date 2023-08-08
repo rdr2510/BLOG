@@ -6,7 +6,7 @@
 **/API/articles/add**
 Permet d'ajouter un nouveau article.
 
-_Voici les parametre qui va avec l'article:_
+Voici les parametre qui va avec l'article:
 
 - titre (string), titre du de l'article
 - contenu (string), Contenu de l'article
