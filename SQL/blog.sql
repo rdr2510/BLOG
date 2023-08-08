@@ -11,3 +11,4 @@ create table articles(
 	categorie_id int not null,
 	foreign key(categorie_id) references categories(id)
 );
+

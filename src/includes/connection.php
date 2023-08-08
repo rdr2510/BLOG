@@ -45,22 +45,25 @@
             }
         }
 
-        public function ExecuteQuerySelect(string $sql, string $param){
+        public function ExecuteQuerySelect(string $sql, array $param){
             try{
                 $stmt = $this->myConnection->prepare($sql);
                 $stmt->execute($param);
                 $rows= $stmt->fetchAll(PDO::FETCH_ASSOC);
-                $error['code']= 0;
-                $error['message']= 'Execution de la requete avec succés';
-                return array('erreur_serveur'=>$error, 'count'=>count($rows), 'rows'=>$rows);
+                if (count($rows) > 0){
+                    return array('rows'=>$rows);
+                } else {
+                    $error['message']= 'Enregistrement vide';
+                    return array('erreur'=>$error, 'count'=>count($rows));
+                }
             } catch (PDOException $e){
                 $error['code']= $e->getCode();
                 $error['message']= $e->getMessage();
-                return array('erreur_serveur'=>$error);
+                return array('erreur'=>$error);
             }
         }
 
-        public function ExecuteQuery(string $sql, string $param){
+        public function ExecuteQuery(string $sql, array $param){
             try{
                 $stmt = $this->myConnection->prepare($sql);
                 $stmt->execute($param);
@@ -70,7 +73,7 @@
                 $error['code']= $e->getCode();
                 $error['message']= $e->getMessage();
             }
-            return array('erreur_serveur'=>$error);
+            return array('erreur'=>$error);
         }
     }
 ?>
