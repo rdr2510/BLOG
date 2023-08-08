@@ -1,5 +1,7 @@
 # BLOG API RESTful
 
+*URL: https://apirestblog.000webhostapp.com/*
+
 ## ARTICLES
 ***/API/articles/reads***
 >Permet de recuperer et de lister toute les articles.
