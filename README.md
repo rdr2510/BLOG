@@ -1,6 +1,6 @@
-# API RESTful
-## LES ENDPOINTS DISPONIBLES:
+# BLOG API RESTful
 
+## ARTICLES
 ***/API/articles/reads***
 >Permet de recuperer et de lister toute les articles.
 - Les paramètres:
@@ -18,61 +18,72 @@
 ##
 ***/API/articles/add***
 >Permet d'ajouter un nouveau article.
-
 - Les paramètres:
-  - **titre (string)**, *titre du de l'article.*
+  - **titre (string)**, *titre de l'article.*
   - **contenu (string)**, *Contenu de l'article.*
   - **image (string)**, *URL de l'image de l'article.*
   - **categorie_id (int)**, *Identifiant unique du categorie.*
 
-- Methode: POST
+- Methode: **POST**
 
 ##
-
 ***/API/articles/update***
+>Permet de modifier un article existant'.
+- Les paramètres:
+  - **id (int)**, *Identifiant unique de l'article.*
+  - **titre (string)**, *titre de l'article.*
+  - **contenu (string)**, *Contenu de l'article.*
+  - **image (string)**, *URL de l'image de l'article.*
+  - **categorie_id (int)**, *Identifiant unique du categorie.*
 
->Permet de modifier un ou tous les parametre dans un article existant dans l'API'.
+- Methode: **PUT**
 
-Pour modifier on doit choisir PUT dans l'outil Postman et entrer l'endpoint correspond.
-
+##
 ***/API/articles/delete***
+>Permet de suprimer un articles à partir de son identifiant unique.
+- Les paramètres:
+  - **id (int)**, *Identifiant unique de l'article.*
 
->Permet de suprimer un articles dans un API a partir de son identifiant unique.
-
-Choisir la methode delete dans l'outil Postman pour suprimé un article.
-
-***/API/categories/add***
-
->Permet d'ajouter une nouvelle categorie.
-
-Vous devez choisir la methode POST dans l'outil Postman pour ajouter une nouvelle catégorie puis entrer l'endpoint associé.
-
-*Voici les parametres du catégorie:*
-
-- nom (string), nom de la catégorie
-- id (string), identifiant unique du categorie
-
+- Methode: **DELETE**
+  
+##
+## CATEGORIES
 ***/API/categories/reads***
+>Permet de recuperer et de lister toute les catégories.
+- Les paramètres:
+  >non disponible
+- Methode: **GET**
 
->Cette fonction permet de lister toute les categories dans l'API
+##
+***/API/categories/read/{id}***
+>Permet de lister une catégorie à partir de son identifiant unique ID .
+- Les paramètres:
+  - **id (int)**, *identifiant unique du catégorie.*
+    
+- Methode: **GET**
 
-Il s'suffit de choisir la methode GET dans l'outil Postman et d'entrer l'endpoint correspond a l'action.
+  ##
+***/API/categories/add***
+>Permet d'ajouter une nouvelle catégorie.
+- Les paramètres:
+  - **nom (string)**, *titre du catégorie.*
 
-***/API/categories/read***
+- Methode: **POST**
 
->Cela permet de lister une categorie avec les parametre dans l'API'.
-
-Choisir la methode GET dans l'outil Postman  puis entrer l'endpoint associé.
-
+##
 ***/API/categories/update***
+>Permet de modifier une catégorie existant'.
+- Les paramètres:
+  - **id (int)**, *Identifiant unique du catégorie.*
+  - **nom (string)**, *titre du catégorie.*
 
->Permet de modifier le contenu de la categorie dans l'API'.
+- Methode: **PUT**
 
-Pour modifier on doit choisir PUT dans l'outil Postman et entrer l'endpoint correspond.
-
+##
 ***/API/articles/delete***
+>Permet de suprimer une catégorie à partir de son identifiant unique.
+- Les paramètres:
+  - **id (int)**, *Identifiant unique du catégorie.*
 
->Permet de suprimer une catégorie dans un API a partir de son identifiant unique.
-
-Choisir la methode delete dans l'outil Postman pour suprimé une catégorie.
+- Methode: **DELETE**
 
