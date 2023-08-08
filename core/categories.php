@@ -34,13 +34,13 @@ class Categories{
 
     function update(int $id, string $nom){
         $sql= 'UPDATE categories SET nom= ? WHERE id= ?';
-        $param= [$nom];
+        $param= [$nom, $id];
         $result = $this->connection->ExecuteQuery($sql, $param);
         return $result;
     }
 
     function delete(int $id){
-        $sql= 'DELETE categories WHERE id= ?';
+        $sql= 'DELETE FROM categories WHERE id= ?';
         $param= [$id];
         $result = $this->connection->ExecuteQuery($sql, $param);
         return $result;
