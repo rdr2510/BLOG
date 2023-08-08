@@ -1,77 +1,77 @@
 # API RESTful
-
 ## LES ENDPOINTS DISPONIBLES:
 
-##_/API/articles/add - > Permet d'ajouter un nouveau article.
+***/API/articles/reads***
+>Permet de recuperer et de lister toute les articles.
+- Les paramètres:
+  >non disponible
+- Methode: **GET**
 
-_Un articles doit contenir les paramètres suivant_:
+##
+***/API/articles/read/{id}***
+>Permet de lister un article à partir de son identifiant unique ID .
+- Les paramètres:
+  - **id (int)**, *identifiant unique de l'article.*
+- Methode: **GET**
+  
+##
+***/API/articles/add***
+>Permet d'ajouter un nouveau article.
 
-- titre (string), titre du de l'article.
-- contenu (string), Contenu de l'article.
-- image (string), URL de l'image de l'article.
-- categorie_id (int), Identifiant unique du categorie.
+- Les paramètres:
+  - **titre (string)**, *titre du de l'article.*
+  - **contenu (string)**, *Contenu de l'article.*
+  - **image (string)**, *URL de l'image de l'article.*
+  - **categorie_id (int)**, *Identifiant unique du categorie.*
 
-Vous devez choisir la methode POST dans l'outil Postman pour ajouter un nouvel article puis entrer l'endpoint associé.
+- Methode: POST
 
-**_/API/articles/reads_**
+##
 
-> Cette fonction permet de recuperer et de lister toute les articles avec leur parametre.
+***/API/articles/update***
 
-Il s'suffit de choisir la methode GET dans l'outil Postman et d'entrer l'endpoint correspond a l'action.
-
-**_/API/articles/read_**
-
-> Cela permet de lister un article avec les parametre .
-
-Choisir la methode GET dans l'outil Postman puis entrer l'endpoint associé.
-
-**_/API/articles/update_**
-
-> Permet de modifier un ou tous les parametre dans un article existant dans l'API'.
+>Permet de modifier un ou tous les parametre dans un article existant dans l'API'.
 
 Pour modifier on doit choisir PUT dans l'outil Postman et entrer l'endpoint correspond.
 
-**_/API/articles/delete_**
+***/API/articles/delete***
 
-> Permet de suprimer un articles dans un API a partir de son identifiant unique.
+>Permet de suprimer un articles dans un API a partir de son identifiant unique.
 
 Choisir la methode delete dans l'outil Postman pour suprimé un article.
 
-**_/API/categories/add_**
+***/API/categories/add***
 
-> Permet d'ajouter une nouvelle categorie.
+>Permet d'ajouter une nouvelle categorie.
 
 Vous devez choisir la methode POST dans l'outil Postman pour ajouter une nouvelle catégorie puis entrer l'endpoint associé.
 
-_Voici les parametres du catégorie:_
+*Voici les parametres du catégorie:*
 
 - nom (string), nom de la catégorie
 - id (string), identifiant unique du categorie
 
-**/API/articles/add**{red}
-Permet d'ajouter un nouveau article.
+***/API/categories/reads***
 
-Voici les parametre qui va avec l'article:
+>Cette fonction permet de lister toute les categories dans l'API
 
-- titre (string), titre du de l'article
-- contenu (string), Contenu de l'article
-- image (string), URL de l'image de l'article
-- categorie_id (int), Identifiant unique du categorie
+Il s'suffit de choisir la methode GET dans l'outil Postman et d'entrer l'endpoint correspond a l'action.
 
 ***/API/categories/read***
 
 >Cela permet de lister une categorie avec les parametre dans l'API'.
 
-Choisir la methode GET dans l'outil Postman puis entrer l'endpoint associé.
+Choisir la methode GET dans l'outil Postman  puis entrer l'endpoint associé.
 
-**_/API/categories/update_**
+***/API/categories/update***
 
-> Permet de modifier le contenu de la categorie dans l'API'.
+>Permet de modifier le contenu de la categorie dans l'API'.
 
 Pour modifier on doit choisir PUT dans l'outil Postman et entrer l'endpoint correspond.
 
-**_/API/articles/delete_**
+***/API/articles/delete***
 
-> Permet de suprimer une catégorie dans un API a partir de son identifiant unique.
+>Permet de suprimer une catégorie dans un API a partir de son identifiant unique.
 
 Choisir la methode delete dans l'outil Postman pour suprimé une catégorie.
+
